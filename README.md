@@ -37,6 +37,7 @@ A curated list of amazingly awesome tools, papers, articles, and communities foc
 1. [TransformerLens](https://github.com/neelnanda-io/TransformerLens) - A Library for Mechanistic Interpretability of Generative Language Models.
 1. [Awesome-Attention-Heads](https://github.com/IAAR-Shanghai/Awesome-Attention-Heads) - A carefully compiled list that summarizes the diverse functions of the attention heads.
 1. [ecco](https://github.com/jalammar/ecco) - A python library for exploring and explaining Natural Language Processing models using interactive visualizations.
+1. [verified-circuits](https://github.com/brian-naughton/verified-circuits) - End-to-end, independently-checkable mechanistic interpretability for a learned tiny transformer (Dyck-1): a Lean 4 proof of circuit↔spec equivalence plus a torch-free interval-arithmetic certificate that the model implements the circuit on every input — a re-verifiable Spec == Circuit == Model over a complete finite task.
 
 ---
 
@@ -68,6 +69,7 @@ A curated list of amazingly awesome tools, papers, articles, and communities foc
 1. ["Let's Verify Step by Step"](https://openreview.net/forum?id=v8L0pN6EOi) - Focuses on improving the reliability of LLMs in multi-step reasoning tasks using step-level human feedback.
 1. ["Interpretability Illusions in the Generalization of Simplified Models"](https://openreview.net/forum?id=v675Iyu0ta) - Examines the limitations of simplified representations (like SVD) used to interpret deep learning systems, especially in out-of-distribution scenarios.
 1. ["The Devil is in the Neurons: Interpreting and Mitigating Social Biases in Language Models"](https://openreview.net/forum?id=SQGUDc9tC8) - Presents a novel approach for identifying and mitigating social biases in language models, introducing the concept of 'Social Bias Neurons'.
+1. [Measuring the Depth of LLM Unlearning via Activation Patching](https://arxiv.org/abs/2605.24614) - Introduces Unlearning Depth Score (UDS), a two-stage causal activation patching metric that measures how deeply unlearning erases knowledge from a model's internal hidden states, layer by layer.
 1. ["Interpreting the Inner Mechanisms of Large Language Models in Mathematical Addition"](https://openreview.net/forum?id=VpCqrMMGVm) - Investigates how LLMs perform the task of mathematical addition.
 1. ["Measuring Feature Sparsity in Language Models"](https://openreview.net/forum?id=SznHfMwmjG) - Develops metrics to evaluate the success of sparse coding techniques in language model activations.
 1. [Toy Models of Superposition](https://transformer-circuits.pub/2022/toy_model/index.html) - Investigates how models represent more features than dimensions, especially when features are sparse.
@@ -94,7 +96,10 @@ A curated list of amazingly awesome tools, papers, articles, and communities foc
 1. [ChainPoll: A High Efficacy Method for LLM Hallucination Detection](https://www.rungalileo.io/blog/chainpoll) - ChainPoll, a novel hallucination detection methodology that substantially outperforms existing alternatives, and RealHall, a carefully curated suite of benchmark datasets for evaluating hallucination detection metrics proposed in recent literature.
 1. [A Mechanistic Analysis of a Transformer Trained on a Symbolic Multi-Step Reasoning Task](https://arxiv.org/abs/2402.11917) - Identifies backward chaining circuits in a transformer trained to perform pathfinding in a tree.
 1. [Detecting Local Insights from Global Labels: Supervised & Zero-Shot Sequence Labeling via a Convolutional Decomposition](https://doi.org/10.1162/coli_a_00416) Introduces instance-based, metric-learner approximations of neural network models and hard-attention mechanisms that can be constructed with task-specific inductive biases for effective semi-supervised learning (i.e., feature detection). These mechanisms combine to yield effective methods for interpretability-by-exemplar over the representation space of neural models.
-1. [Similarity-Distance-Magnitude Universal Verification](https://arxiv.org/abs/2502.20167) Introduces SDM activation functions, SDM calibration, and SDM networks, which are neural networks (e.g., LLMs) with uncertainty-aware verification and interpretability-by-exemplar as intrinsic properties. See the blog post ["The Determinants of Controllable AGI"](https://raw.githubusercontent.com/allenschmaltz/Resolute_Resolutions/master/volume5/volume5.pdf) for a high-level overview of the broader implications. 
+1. [Similarity-Distance-Magnitude Universal Verification](https://arxiv.org/abs/2502.20167) Introduces SDM activation functions, SDM calibration, and SDM networks, which are neural networks (e.g., LLMs) with uncertainty-aware verification and interpretability-by-exemplar as intrinsic properties. See the blog post ["The Determinants of Controllable AGI"](https://raw.githubusercontent.com/allenschmaltz/Resolute_Resolutions/master/volume5/volume5.pdf) for a high-level overview of the broader implications.
+1. [Unveiling LLMs: The Evolution of Latent Representations in a Dynamic Knowledge Graph](https://openreview.net/forum?id=dWYRjT501w) A framework based on the technique of activation patching to represent the factual knowledge embedded in the vector space of LLMs as dynamic knowledge graphs.
+1. [DRIFT: Detecting Representational Inconsistencies for Factual Truthfulness](https://arxiv.org/abs/2601.14210) - Trains a lightweight probe on LLM intermediate hidden states to detect hallucinations, exploiting uncertainty signals encoded in middle layers that are lost in the final token projection.
+1. [Phase Transitions in Large Language Models and the O(N) Model](https://arxiv.org/abs/2501.16241) - Recasts the Transformer as an O(N) spin model from statistical physics, finds two phase transitions (one in generation temperature, one in parameter count), and observes that models above ~7B parameters recognize when they are producing nonsense.
 
 ---
 
@@ -113,6 +118,7 @@ A curated list of amazingly awesome tools, papers, articles, and communities foc
 1. [A circuit for Python docstrings in a 4-layer attention-only transformer](https://www.lesswrong.com/posts/u6KXXmKFbXfWzoAXn/a-circuit-for-python-docstrings-in-a-4-layer-attention-only) - Proposes the Quantization Model for explaining neural scaling laws in neural networks.
 1. [Discovering Latent Knowledge in Language Models Without Supervision](https://arxiv.org/abs/2212.03827) - Examines a specific neural circuit within a 4-layer transformer model responsible for generating Python docstrings.
 1. [Toward Transparent AI: A Survey on Interpreting the Inner Structures of Deep Neural Networks](https://arxiv.org/abs/2207.13243) - Survey on mechanistic interpretability
+1. [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model) - Anthropic’s research article on tracing internal computational pathways in Claude 3.5 Haiku, including multilingual representations, planning, mental math, faithful/unfaithful reasoning, multi-step reasoning, and hallucination-related mechanisms.
 
 ---
 
